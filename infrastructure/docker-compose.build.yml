@@ -7,11 +7,6 @@ services:
       context: ../
       dockerfile: infrastructure/docker/ontop/Dockerfile
       target: build
-  gatekeeper:
-    image: ${DOCKER_IMAGE_GATEKEEPER}:${DOCKER_TAG}
-    build:
-      context: ../
-      dockerfile: infrastructure/docker/gatekeeper/Dockerfile
   nginx:
     image: ${DOCKER_IMAGE_NGINX}:${DOCKER_TAG}
     build:
