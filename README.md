@@ -83,6 +83,12 @@ To stop it:
 docker-compose down
 ```
 
+#### Authentication
+
+A second Docker-compose file (`docker-compose.auth.yml`) can be used for testing access control policies. 
+
+At the moment, it requires having an instance of Keycloak locally. See https://github.com/noi-techpark/authentication-server for instructions on how to install it.
+
 ## Deployment at NOI
 
 The databases used in the test and production environments of NOI are not managed by Docker, but are instead AWS RDS services.
